@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+	<div id="facultylist">
+		{% for fac in faculty %}
+		{{ fac }}
+		{% endfor %}
+	</div>
+{% endblock %}

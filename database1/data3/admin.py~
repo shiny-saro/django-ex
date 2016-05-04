@@ -1,0 +1,32 @@
+from django.contrib import admin
+
+# Register your models here.
+from django.contrib import admin
+
+# Register your models here.
+
+from .models  import Faculty
+
+class FacultyAdmin(admin.ModelAdmin):
+	list_display=('fid','fname')
+
+admin.site.register(Faculty,FacultyAdmin)
+
+
+
+
+
+
+
+"""
+
+{% extends "base.html" %}
+{% block content %}
+	<div id="facultylist">
+		{% for fac in faculty %}
+		{{ fac.fid }}
+		{% endfor %}
+	</div>
+{% endblock %}
+
+"""

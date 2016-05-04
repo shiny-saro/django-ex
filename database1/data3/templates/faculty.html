@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+	
+<html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<head>
+</head>
+<body ng-app>
+<h3>DATABASE<h3>
+<div id="example" ng-controller="dataController">
+<table id="tab_example" class="display nowrap" width="30%" cellspacing="3" border=1>
+    <thead>
+    <tr>
+    <th>Faculty Id</th>
+    <th>Faculty Name</th>
+    
+    </tr>
+    </thead>
+    <tbody>
+    
+    <div id="facultylist">
+	{% for fac in faculty %}
+	<tr>
+    	<td>{{ fac.fid }}</td>
+    	<td>{{ fac.fname }}</td>
+	</tr>
+	{% endfor %}
+    </div>
+    
+    </tbody>
+</table>       
+</div>
+</body>
+</html>
+{% endblock %}

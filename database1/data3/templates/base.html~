@@ -1,0 +1,13 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"href="/static/css/faculty.css"/>
+	{% block extrahead %}{% endblock %}
+</head>
+<body>
+
+<div id="pageController">
+	{% block content %}
+	{% endblock %}
+</div>
+</body>
+</html>
